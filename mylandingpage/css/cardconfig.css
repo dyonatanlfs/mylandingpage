@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap'); 
+/* font-family: 'Gowun Dodum', sans-serif */
+
+/* Paleta de cores: https://colorpalettes.net/color-palette-4567/ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-size: 100%;
+    background-color: #02315E; 
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #B9848C;
+}
+.colecao-frontend {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card-frontend {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    height: 300px;
+    border: 2px solid #B9848C;
+    margin: 10px;
+}
+.img-card-frontend {
+    width: 240px;
+    height: 255px;
+}
+.descricao-card-frontend {
+
+}
+
+@media screen and (max-width: 600px) {
+    .colecao-frontend {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        column-gap: 10px;
+    }
+    .card-frontend {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #B9848C;
+    }
+    .img-card-frontend {
+        max-width: 100%;
+        height: auto;
+        border: none;
+    }
+}

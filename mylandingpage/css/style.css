@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap'); 
+/* font-family: 'Gowun Dodum', sans-serif */
+
+/* Paleta de cores: https://colorpalettes.net/color-palette-4567/ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-size: 100%;
+    background-color: #02315E; 
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #B9848C;
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #B9848C;
+    font-size: 23px ;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+.img-cabecalho {
+    height: auto;
+}
+.nav-cabecalho {
+    display: flex;
+    gap: 30px;
+}
+.item-nav-cabecalho {
+    padding: 0 10px 0 10px;
+    color: #02315E;
+}
+.item-nav-cabecalho:hover {
+    background-color: #02315E;
+    color: #B9848C;
+    border-radius: 0%;
+}
+.conteudo {
+    /* margin: 75px; */
+}
+.h1-mypage {
+    width: auto;
+    background-color: #02315E;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    border-bottom: 2px solid #B9848C;
+}
+.secao-frontend {
+    text-align: center;
+    padding: 10px 0 10px 0;
+    border-bottom: 2px solid #B9848C;
+}
+.h2-sobre-conteudo {
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+.sobre-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #B9848C;
+}
+.img-conteudo {
+    height: 250px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.p-sobre-conteudo {
+    font-size: 18px;
+    padding: 10px;
+}
+.classe-contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 2px solid #B9848C;
+}
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #B9848C;
+    font-size: 23px;
+}
+.classe-a-rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.a-rodape {
+    color: #02315E;
+    padding: 10px;
+}
+.a-rodape:hover {
+    background-color: #02315E;
+    color: #B9848C;
+    border-radius: 0%;
+}
+.direitos-criacao {
+    color: #02315E; 
+    font-size: 15px;
+    text-align: center;
+}
+.direitos-criacao {
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-cabecalho {
+        height: auto;
+        padding: 5px 0 5px 0;
+    }
+    .nav-cabecalho {
+        display: flex;
+        flex-direction: column;
+        gap: 5px
+    }
+    .classe-contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5px;
+    }
+    .classe-a-rodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+    }
+}
